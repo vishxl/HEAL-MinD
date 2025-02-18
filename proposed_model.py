@@ -171,7 +171,7 @@ for layer in model.layers:
         print(layer.name)
         layer.trainable = False
 
-model.compile(loss="binary_crossentropy", optimizer='Adadelta', metrics=['accuracy', cust_f1])
+model.compile(loss="binary_crossentropy", optimizer='Adam', metrics=['accuracy', cust_f1])
 
 model.summary()
 
